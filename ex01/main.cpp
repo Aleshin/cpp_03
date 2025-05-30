@@ -2,15 +2,13 @@
 #include "ScavTrap.hpp"
 #include <iostream>
 
-void separator() {
-	std::cout << "\n-----------------------------\n\n";
-}
-
 int main() {
 	ClapTrap basic("Basic");
-	basic.attack("target");
+	ScavTrap advanced("Advanced");
+	basic.attack("Advanced");
+	advanced.attack("Basic");
 
-	std::cout << "\n---\n\n";
+	std::cout << "\n--------\n\n";
 
 	ScavTrap elite("Elite");
 	elite.attack("target");
