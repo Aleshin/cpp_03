@@ -5,11 +5,11 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name) {
 	_hitPoints = 100;
 	_energyPoints = 100;
 	_attackDamage = 30;
-	std::cout << "FragTrap " << _name << " has been constructed.\n";
+	std::cout << "FragTrap " << _name << " has been constructed very vell.\n";
 }
 
 FragTrap::~FragTrap() {
-	std::cout << "FragTrap " << _name << " has been destroyed.\n";
+	std::cout << "FragTrap " << _name << " has been destroyed totaly and completely.\n";
 }
 
 void FragTrap::attack(const std::string& target) {
@@ -19,7 +19,7 @@ void FragTrap::attack(const std::string& target) {
 	}
 	--_energyPoints;
 	std::cout << "FragTrap " << _name << " attacks " << target
-	          << ", dealing " << _attackDamage << " points of damage!\n";
+	          << " quickly and brutally, " << _attackDamage << " points of damage gone!\n";
 }
 
 void FragTrap::highFivesGuys() {

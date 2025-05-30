@@ -9,21 +9,16 @@ void separator() {
 
 int main() {
 	ClapTrap basic("Basic");
-	basic.attack("target");
-
 	separator();
-
-	ScavTrap guard("Guard");
-	guard.attack("intruder");
-	guard.guardGate();
-
+	ScavTrap better("Better");
 	separator();
-
-	FragTrap bomber("Bomber");
-	bomber.attack("enemy");
-	bomber.highFivesGuys();
-
+	FragTrap thebest("The best");
 	separator();
-
+	basic.attack("Better");
+	better.attack("The best");
+	thebest.attack("Basic");
+	separator();
+	better.guardGate();
+	thebest.highFivesGuys();
 	return 0;
 }
